@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head><link as_="image" href="new_logo.webp?v=3" rel="preload"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Kennedy Andrade — Lipoaspiração Fracionada &amp; Estética Avançada</title>
+<meta content="Kennedy Andrade, CRM-PR 37638. Atuação em Lipoaspiração Fracionada, Contorno Corporal e Procedimentos Estéticos na Duo Clinic." name="description"/>
+<meta content="#0B1626" name="theme-color"/>
+<link href="new_logo.webp?v=3" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --preto:#0B1626;
+    --preto-2:#15243B;
+    --dourado:#A67D3F;
+    --dourado-claro:#ECE094;
+    --rose:#e8e6d8;
+    --rose-2:#f0eedd;
+    --branco:#FEFEFE;
+    --texto-escuro:#0B1626;
+    --texto-suave:#4a5568;
+    --linha:rgba(166,125,63,0.35);
+    --serif:'Cormorant Garamond', serif;
+    --sans:'Jost', sans-serif;
+    --header-h:84px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:var(--header-h);}
+  body{width:100%;overflow-x:hidden;
+    font-family:var(--sans);
+    color:var(--texto-escuro);
+    background:var(--branco);
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;height:auto;width:100%;}
+  a{text-decoration:none;color:inherit;}
+  .eyebrow{
+    font-family:var(--sans);
+    letter-spacing:.3em;
+    text-transform:uppercase;
+    font-size:.72rem;
+    color:var(--dourado);
+    font-weight:500;
+  }
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.05;}
+  .container{width:100%;max-width:1240px;margin:0 auto;padding:0 4.5%;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+    padding:1rem 2.1rem;
+    font-family:var(--sans);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;
+    border:1px solid var(--dourado);
+    color:var(--dourado);
+    background:transparent;
+    transition:all .45s cubic-bezier(.4,0,.2,1);
+    cursor:pointer;
+    white-space:nowrap;
+    border-radius:2px;
+  }
+  .btn:hover{background:var(--dourado);color:var(--branco);}
+  .btn.solid{background:var(--dourado);color:var(--branco);}
+
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:1.1rem 4.5%;
+    background:rgba(11,22,38,.88);
+    backdrop-filter:blur(10px);
+    transition:all 0.3s ease;
+  }
+  header.scrolled{background:rgba(11,22,38,0.97);padding:.75rem 4.5%;}
+  .logo-mark{display:flex;align-items:center;gap:.6rem;}
+  .logo-mark img{width:54px;height:54px;object-fit:contain;}
+  .logo-text{font-family:var(--serif);color:var(--dourado-claro);line-height:1.1;}
+  .logo-text .l1{font-size:1rem;letter-spacing:.1em;display:block;font-weight:600;}
+  
+  nav.links{display:flex;gap:1.6rem;}
+  nav.links a{color:#e8ddd0;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;position:relative;padding-bottom:5px;}
+  nav.links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1.5px;background:var(--dourado);transition:width .35s ease;}
+  nav.links a:hover::after{width:100%;}
+
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+  .burger span{width:24px;height:1.5px;background:var(--dourado-claro);}
+  @media(max-width:900px){
+    nav.links{display:none;}
+    .burger{display:flex;}
+  }
+
+  .mobile-menu{
+    position:fixed;inset:0;background:rgba(11,22,38,.98);z-index:99;
+    display:none;flex-direction:column;align-items:center;justify-content:center;gap:2rem;
+  }
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{color:#ddd;font-size:1.3rem;text-transform:uppercase;letter-spacing:.1em;}
+
+  .hero{
+    position:relative;min-height:100svh;display:flex;align-items:center;
+    background:var(--preto);color:var(--branco);overflow:hidden;
+  }
+  .hero-bg{position:absolute;inset:0;z-index:1;}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;opacity:0.55;filter:saturate(0.8);}
+  .hero-content{position:relative;z-index:2;width:100%;}
+  .hero-inner{max-width:650px;text-align:left;}
+  @media(min-width:901px){
+    .hero-bg img{content:url('kenedy_desktop_hero.webp');object-position:center center;}
+    .hero-content{display:flex;justify-content:flex-start;}
+  }
+  @media(max-width:900px){
+    .hero{align-items:flex-end;padding-bottom:8vh;}
+    .hero-content{text-align:center;}
+    .hero-inner{max-width:100%;margin:0 auto;}
+    .hero h1{font-size:clamp(2.2rem,7vw,3.5rem);margin-bottom:1rem;}
+    .hero p{margin-inline:auto;font-size:1rem;margin-bottom:1.5rem;}
+  }
+  .hero h1{font-size:clamp(2.5rem,6vw,4.6rem);margin-bottom:1.4rem;color:var(--branco);}
+  .hero p{font-size:1.1rem;color:var(--branco);opacity:.85;margin-bottom:2rem;max-width:560px;}
+
+  section{padding:7rem 0;}
+  .section-header{text-align:center;margin-bottom:4rem;}
+
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;}
+  @media(max-width:900px){.grid-2{grid-template-columns:1fr;gap:3rem;text-align:center;}}
+
+  .sobre-img img{border-radius:12px;}
+  .sobre-text ul{list-style:none;margin:2rem 0;text-align:left;}
+  .sobre-text li{padding-left:2rem;margin-bottom:.8rem;position:relative;color:var(--texto-suave);font-size:0.95rem;}
+  .sobre-text li::before{content:'✓';position:absolute;left:0;color:var(--dourado);font-weight:600;}
+
+  /* PROCEDIMENTOS */
+  .proc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2.5rem;margin-top:3rem;}
+  .proc-card{background:var(--branco);border-radius:12px;overflow:hidden;box-shadow:0 12px 32px rgba(0,0,0,.08);transition:0.4s;}
+  .proc-card:hover{transform:translateY(-10px);box-shadow:0 20px 40px rgba(166,125,63,0.2);}
+  .proc-img{height:240px;overflow:hidden;}
+  .proc-img img{width:100%;height:100%;object-fit:cover;transition:0.6s;}
+  .proc-card:hover .proc-img img{transform:scale(1.1);}
+  .proc-info{padding:2rem;text-align:center;}
+  .proc-info h3{font-size:1.4rem;margin-bottom:1rem;color:var(--preto);}
+  #tratamentos .section-header h2,#tratamentos .section-header p{color:var(--branco);}
+  #clinica .sobre-text h2,#clinica .sobre-text p{color:var(--branco);}
+  #clinica .sobre-text .eyebrow{color:var(--dourado-claro);}
+  .proc-info p{font-size:0.9rem;color:var(--texto-suave);line-height:1.6;}
+
+  /* GALERIA ANTES E DEPOIS */
+  .gal-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:2rem;}
+  .case-card{background:var(--branco);border-radius:12px;overflow:hidden;box-shadow:0 12px 32px rgba(0,0,0,.08);}
+  .case-images{display:grid;grid-template-columns:1fr 1fr;gap:2px;}
+  .case-img-wrapper{position:relative;aspect-ratio:1/1;overflow:hidden;}
+  .case-label{position:absolute;bottom:8px;left:8px;background:rgba(0,0,0,0.7);color:#fff;font-size:0.6rem;padding:3px 8px;text-transform:uppercase;z-index:2;}
+  .case-info{padding:1.5rem;text-align:center;}
+  .case-info h3{font-size:1.1rem;color:var(--preto);font-family:var(--sans);font-weight:600;}
+
+  /* DIFERENCIAIS GRID */
+  .diff-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:3rem;}
+  .diff-card{padding:2rem;background:var(--preto-2);border-radius:8px;transition:0.3s;text-align:center;color:var(--branco);}
+  .diff-card:hover{background:var(--dourado);color:var(--branco);}
+  .diff-card h4{margin-bottom:1rem;font-size:1.1rem;font-weight:600;}
+  .diff-card p{font-size:0.9rem;}
+
+  .map-container{width:100%;height:450px;border-radius:12px;overflow:hidden;margin-top:3rem;}
+  .map-container iframe{width:100%;height:100%;border:0;}
+
+  footer{background:var(--preto);color:var(--branco);padding:4rem 0 2rem;}
+  .foot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:3rem;margin-bottom:3rem;}
+  .foot-bottom{border-top:1px solid rgba(166,125,63,.3);padding-top:2rem;text-align:center;font-size:.8rem;color:#A67D3F;}
+
+  .wa-float{
+    position:fixed;bottom:2rem;right:2rem;width:56px;height:56px;
+    background:var(--dourado);border-radius:50%;display:flex;align-items:center;justify-content:center;
+    color:var(--branco);box-shadow:0 4px 16px rgba(166,125,63,.5);z-index:50;
+  }
+  .wa-float svg{width:28px;height:28px;fill:currentColor;}
+
+  .reveal{opacity:0;transform:translateY(30px);transition:all .8s ease;}
+  .reveal.active{opacity:1;transform:translateY(0);}
+
+</style>
+</head>
+<body>
+<header id="header">
+<div class="logo-mark">
+<img alt="Logo Kennedy Andrade" fetchpriority="high" loading="eager" src="new_logo.webp?v=3"/>
+</div>
+<nav class="links">
+<a href="#sobre">Sobre</a>
+<a href="#tratamentos">Tratamentos</a>
+<a href="#galeria">Resultados</a>
+<a href="#clinica">A Clínica</a>
+<a href="#contato">Contato</a>
+</nav>
+<div class="burger" id="burger"><span></span><span></span><span></span></div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+<a href="#sobre">Sobre</a>
+<a href="#tratamentos">Tratamentos</a>
+<a href="#galeria">Resultados</a>
+<a href="#clinica">A Clínica</a>
+<a href="#contato">Contato</a>
+<a class="btn solid" href="https://wa.me/5545991341212" style="margin-top:1rem;" target="_blank">Agendar</a>
+</div>
+<section class="hero">
+<div class="hero-bg"><img alt="Kennedy Andrade" decoding="async" fetchpriority="high" loading="lazy" src="kenedy_dentista_1_opt.webp"/></div>
+<div class="container hero-content">
+<div class="hero-inner">
+<div class="eyebrow">Lipoaspiração Fracionada &amp; Estética</div>
+<h1>Excelência em Contorno Corporal</h1>
+<p>Sentir-se bem com a própria imagem muda muito mais do que o espelho. Porque autoestima vai além da aparência. Ela influencia a confiança, o bem-estar e a forma como você vive cada momento.</p>
+<a class="btn solid" href="https://wa.me/5545991341212" target="_blank">Agendar Consulta</a>
+</div>
+</div>
+</section>
+<section id="tratamentos" style="background:var(--preto-2);">
+<div class="container">
+<div class="section-header reveal">
+<div class="eyebrow">Tratamentos Oferecidos</div>
+<h2>Procedimentos Especializados</h2>
+<p>Foco em resultados naturais e segurança absoluta.</p>
+</div>
+<div class="proc-grid">
+<div class="proc-card reveal">
+<div class="proc-img"><img alt="Lipoaspiração Fracionada" decoding="async" loading="lazy" src="proc_minilipo.webp"/></div>
+<div class="proc-info">
+<h3>Lipoaspiração Fracionada</h3>
+<p>Também conhecida como minilipo, é o nosso carro-chefe. Ideal para remover gordura localizada e definir o contorno corporal com recuperação mais rápida.</p>
+</div>
+</div>
+<div class="proc-card reveal">
+<div class="proc-img"><img alt="Cervicoplastia" decoding="async" loading="lazy" src="proc_cervicoplastia.webp"/></div>
+<div class="proc-info">
+<h3>Cervicoplastia</h3>
+<p>Tratamento focado na região do pescoço e papada, proporcionando um perfil mais jovem e definido através da remoção de excessos.</p>
+</div>
+</div>
+<div class="proc-card reveal">
+<div class="proc-img"><img alt="Transplante Capilar" decoding="async" loading="lazy" src="proc_transplante_capilar.webp"/></div>
+<div class="proc-info">
+<h3>Transplante Capilar</h3>
+<p>Técnicas avançadas para restauração capilar com densidade e naturalidade, devolvendo a autoestima de forma definitiva.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="galeria">
+<div class="container">
+<div class="section-header reveal">
+<div class="eyebrow">Resultados Reais</div>
+<h2>Galeria Antes e Depois</h2>
+<p>Transformações que preservam a naturalidade e elevam a autoestima.</p>
+</div>
+<div class="gal-grid">
+<div class="case-card reveal">
+<div class="case-images">
+<div class="case-img-wrapper"><img alt="Antes Lipoaspiração" decoding="async" loading="lazy" src="lipo_antes.webp"/><span class="case-label">Antes</span></div>
+<div class="case-img-wrapper"><img alt="Depois Lipoaspiração" decoding="async" loading="lazy" src="lipo_depois.webp"/><span class="case-label">Depois</span></div>
+</div>
+<div class="case-info"><h3>Lipoaspiração Fracionada</h3></div>
+</div>
+<div class="case-card reveal">
+<div class="case-images">
+<div class="case-img-wrapper"><img alt="Antes Cervicoplastia" decoding="async" loading="lazy" src="cervico_antes.webp"/><span class="case-label">Antes</span></div>
+<div class="case-img-wrapper"><img alt="Depois Cervicoplastia" decoding="async" loading="lazy" src="cervico_depois.webp"/><span class="case-label">Depois</span></div>
+</div>
+<div class="case-info"><h3>Cervicoplastia (Pescoço)</h3></div>
+</div>
+<div class="case-card reveal">
+<div class="case-images">
+<div class="case-img-wrapper"><img alt="Antes Transplante Capilar" decoding="async" loading="lazy" src="capilar_antes.webp"/><span class="case-label">Antes</span></div>
+<div class="case-img-wrapper"><img alt="Depois Transplante Capilar" decoding="async" loading="lazy" src="capilar_depois.webp"/><span class="case-label">Depois</span></div>
+</div>
+<div class="case-info"><h3>Transplante Capilar</h3></div>
+</div>
+</div>
+</div>
+</section>
+<section id="diferenciais">
+<div class="container">
+<div class="section-header reveal">
+<div class="eyebrow">Diferenciais Premium</div>
+<h2>Por que escolher nosso atendimento?</h2>
+</div>
+<div class="diff-grid">
+<div class="diff-card reveal"><h4>Atendimento individualizado</h4><p>Cada paciente recebe atenção exclusiva e dedicada.</p></div>
+<div class="diff-card reveal"><h4>Planejamento personalizado</h4><p>Protocolos desenhados especificamente para seus objetivos.</p></div>
+<div class="diff-card reveal"><h4>Técnicas modernas</h4><p>Uso das tecnologias mais recentes e seguras do mercado.</p></div>
+<div class="diff-card reveal"><h4>Segurança absoluta</h4><p>Procedimentos realizados seguindo rigorosos protocolos médicos.</p></div>
+<div class="diff-card reveal"><h4>Acompanhamento pós</h4><p>Suporte próximo durante todo o período de recuperação.</p></div>
+<div class="diff-card reveal"><h4>Resultados naturais</h4><p>Foco na harmonia e na beleza autêntica de cada um.</p></div>
+</div>
+</div>
+</section>
+<section id="clinica" style="background:var(--preto-2);">
+<div class="container">
+<div class="grid-2">
+<div class="sobre-text reveal">
+<div class="eyebrow">Nossa Estrutura</div>
+<h2>Duo Clinic Medicina &amp; Odontologia</h2>
+<p style="margin-top:1.5rem;">A DuoClinic é uma clínica moderna que une tecnologia, segurança e atendimento humanizado em um ambiente sofisticado.</p>
+<p style="margin-top:1rem;">Nosso objetivo é proporcionar tratamentos personalizados, respeitando a individualidade de cada paciente e oferecendo excelência desde a primeira consulta até o acompanhamento pós-procedimento.</p>
+<p style="margin-top:1rem;">Contamos com uma estrutura moderna e confortável, projetada para que sua experiência seja única e tranquila.</p>
+</div>
+<div class="sobre-img reveal">
+<img alt="Dr. Kennedy Andrade na Duo Clinic" decoding="async" loading="lazy" src="dr_kennedy_clinica.webp" style="border-radius:12px; box-shadow:0 12px 32px rgba(0,0,0,0.15);"/>
+</div>
+</div>
+</div>
+</section>
+<!-- SEÇÃO SOBRE - MOVIDA PARA O FINAL (após Antes e Depois e Depoimentos) -->
+<section id="sobre" style="background:var(--branco);">
+<div class="container">
+<div class="grid-2">
+<div class="sobre-img reveal">
+<img alt="Kennedy Andrade" decoding="async" loading="lazy" src="kenedy_dentista_3_opt.webp"/>
+</div>
+<div class="sobre-text reveal">
+<div class="eyebrow">Medicina Estética</div>
+<h2>Kennedy Andrade</h2>
+<p><strong>CRM-PR 37638</strong></p>
+<p style="margin-top:1rem;">Há mais de 10 anos na medicina, construí minha trajetória em áreas de alta complexidade, como urgência, emergência e terapia intensiva, onde precisão, critério e tomada de decisão fazem parte da rotina. Essa experiência moldou minha formação e a forma como exerce a medicina até hoje.</p>
+<p style="margin-top:1rem;">A medicina estética foi uma escolha de carreira. Um caminho que me permite unir conhecimento médico, raciocínio clínico e atenção aos detalhes em uma área que exige precisão em cada etapa.</p>
+<h4 style="margin-top:2rem; color:var(--dourado);">Especializações e aperfeiçoamentos</h4>
+<ul>
+<li>Formação contínua em cirurgia estética.</li>
+<li>Aperfeiçoamento em transplante capilar.</li>
+<li>Aperfeiçoamento em blefaroplastia.</li>
+<li>Aperfeiçoamento em procedimentos dermatológicos e estética facial.</li>
+<li>Experiência em urgência e emergência.</li>
+</ul>
+<a class="btn" href="https://wa.me/5545991341212" target="_blank">Falar com o Médico</a>
+</div>
+</div>
+</div>
+</section>
+<section id="contato">
+<div class="container">
+<div class="section-header reveal">
+<div class="eyebrow">Localização &amp; Contato</div>
+<h2>Onde nos encontrar</h2>
+<p>Avenida José Maria de Brito, 1567 - Foz do Iguaçu - PR</p>
+<p>Horário de atendimento: 08:00 às 18:00</p>
+</div>
+<div class="map-container reveal">
+<iframe allowfullscreen="" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.5823157267193!2d-54.57143472370395!3d-25.51897363595648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f690f055000001%3A0x6a0b5a5555555555!2sAv.%20Jos%C3%A9%20Maria%20de%20Brito%2C%201567%20-%20Bairro%20Monjolo%2C%20Foz%20do%20Igua%C3%A7u%20-%20PR%2C%2085850-000!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"></iframe>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<div class="foot-grid">
+<div>
+<h2 style="color:var(--dourado-claro);font-family:var(--serif);">KENNEDY ANDRADE</h2>
+<p style="font-size:.9rem;color:#ECE094;margin-top:1rem;">Foco em Lipoaspiração Fracionada, Contorno Corporal e Procedimentos Estéticos. Ética e excelência em cada detalhe.</p>
+</div>
+<div>
+<h4 style="color:var(--dourado);margin-bottom:1rem;">Contato</h4>
+<p style="color:#ddd;display:block;margin-bottom:0.5rem;">WhatsApp: (45) 99134-1212</p>
+<p style="color:#ddd;display:block;margin-bottom:0.5rem;">E-mail: duoclinicmedodonto@gmail.com</p>
+<p style="font-size:0.8rem;color:#666;margin-top:1rem;">Avenida José Maria de Brito, 1567<br/>Foz do Iguaçu - PR</p>
+</div>
+</div>
+<div class="foot-bottom">
+<p>© 2026 Kennedy Andrade. CRM-PR 37638</p>
+</div>
+</div>
+</footer>
+<a class="wa-float" href="https://wa.me/5545991341212" target="_blank"><svg viewbox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.14L2 22l5.13-1.54a9.85 9.85 0 004.91 1.31h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 17.9h-.01a8.02 8.02 0 01-4.08-1.12l-.29-.17-3.05.92.91-2.98-.19-.3a8 8 0 01-1.24-4.34c0-4.42 3.6-8.02 8.03-8.02 2.14 0 4.16.84 5.67 2.35a7.96 7.96 0 012.34 5.68c0 4.43-3.6 8-8.09 8zm4.4-6c-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.8-.2-.48-.4-.42-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.71 2.61 4.15 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"></path></svg></a>
+<script>
+  window.addEventListener('scroll', () => {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) { header.classList.add('scrolled'); } else { header.classList.remove('scrolled'); }
+    document.querySelectorAll('.reveal').forEach(reveal => {
+      if (reveal.getBoundingClientRect().top < window.innerHeight - 100) { reveal.classList.add('active'); }
+    });
+  });
+  const burger = document.getElementById('burger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  document.querySelectorAll('#mobileMenu a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.remove('open')));
+  window.dispatchEvent(new Event('scroll'));
+</script>
+</body>
+</html>

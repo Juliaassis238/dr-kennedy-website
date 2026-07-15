@@ -1,0 +1,23 @@
+Pares identificados para a seção de antes e depois do site:
+
+1. Caso feminino 1
+- Antes: IMG_3098.JPG
+- Depois: IMG_3099.JPG
+- Observação: mesma paciente, enquadramento frontal semelhante.
+
+2. Caso masculino 1
+- Antes: IMG_3100.JPG
+- Depois: IMG_3101.JPG
+- Observação: mesmo paciente, dentes anteriores fraturados no antes e sorriso restaurado no depois.
+
+3. Caso feminino 2
+- Antes: IMG_3102.JPG
+- Depois: IMG_3103.JPG
+- Observação: mesma paciente, diastema/desalinhamento no antes e sorriso harmonizado no depois.
+
+Imagens institucionais:
+- kenedy_dentista_1.PNG
+- kenedy_dentista_3.PNG
+- logo_kennedy.png
+
+A solicitação do usuário é reorganizar a galeria para mostrar claramente Antes e Depois com a mesma pessoa em cada comparação.

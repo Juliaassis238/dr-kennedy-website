@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5">
+<title>Dr. Kennedy Andrade — Odontologia Digital & Estética | Foz do Iguaçu</title>
+<meta name="description" content="Dr. Kennedy Andrade, CRM-PR 37638. Protocolo K especializado em lentes de contato dental, odontologia digital e transformações estéticas em Foz do Iguaçu, PR.">
+<meta name="theme-color" content="#0e0c0b">
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Dr. Kennedy Andrade — Odontologia Digital & Estética">
+<meta property="og:description" content="Especialista em Protocolo K, lentes de contato dental e transformações estéticas. Atendimento premium em Foz do Iguaçu.">
+<meta property="og:image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="logo_kennedy.webp" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Dr. Kennedy Andrade da Silva",
+  "image": "kenedy_dentista_1.webp",
+  "telephone": "+554599015555",
+  "priceRange": "$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. José Maria de Brito, 1567",
+    "addressLocality": "Foz do Iguaçu",
+    "addressRegion": "PR",
+    "postalCode": "85850-000",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"19:00"}
+  ]
+}
+</script>
+<style>
+  :root{
+    --preto:#0c0a09;
+    --preto-2:#161311;
+    --dourado:#c9a15a;
+    --dourado-claro:#e4c98a;
+    --rose:#e9dcd3;
+    --rose-2:#f3e9e2;
+    --branco:#fdfbf9;
+    --texto-escuro:#231f1c;
+    --texto-suave:#6b6058;
+    --linha:rgba(201,161,90,0.35);
+    --serif:'Cormorant Garamond', serif;
+    --sans:'Jost', sans-serif;
+    --header-h:84px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:var(--header-h);}
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;}
+  }
+  body{
+    font-family:var(--sans);
+    color:var(--texto-escuro);
+    background:var(--branco);
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+    width:100%;
+  }
+  img{max-width:100%;display:block;height:auto;width:100%;}
+  a{text-decoration:none;color:inherit;}
+  ::selection{background:var(--dourado);color:var(--preto);}
+  :focus-visible{outline:2px solid var(--dourado);outline-offset:3px;}
+  .eyebrow{
+    font-family:var(--sans);
+    letter-spacing:.3em;
+    text-transform:uppercase;
+    font-size:.72rem;
+    color:var(--dourado);
+    font-weight:500;
+  }
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.05;}
+  .container{width:100%;max-width:1240px;margin:0 auto;padding:0 4.5%;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+    padding:1rem 2.1rem;
+    font-family:var(--sans);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;
+    border:1px solid var(--dourado);
+    color:var(--dourado);
+    background:transparent;
+    transition:all .45s cubic-bezier(.4,0,.2,1);
+    cursor:pointer;
+    white-space:nowrap;
+    border-radius:2px;
+  }
+  .btn:hover{background:var(--dourado);color:var(--preto);}
+  .btn.solid{background:var(--dourado);color:var(--preto);}
+  .btn.solid:hover{background:var(--dourado-claro);border-color:var(--dourado-claro);}
+  .btn.on-dark{border-color:rgba(253,251,249,.7);color:var(--branco);}
+  .btn.on-dark:hover{background:var(--branco);color:var(--preto);border-color:var(--branco);}
+  .btn.on-light{border-color:var(--texto-escuro);color:var(--texto-escuro);}
+  .btn.on-light:hover{background:var(--texto-escuro);color:var(--branco);}
+  .btn.full{width:100%;}
+
+  /* ===== HEADER ===== */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:1.1rem 4.5%;
+    padding-top:calc(1.1rem + env(safe-area-inset-top));
+    transition:background .5s ease,padding .4s ease,box-shadow .4s ease,transform .35s ease;
+    background:rgba(12,10,9,.82);
+    backdrop-filter:blur(10px);
+  }
+  header.scrolled{
+    background:rgba(12,10,9,0.94);
+    backdrop-filter:blur(14px);
+    padding:.75rem 4.5%;
+    padding-top:calc(.75rem + env(safe-area-inset-top));
+    box-shadow:0 2px 16px rgba(0,0,0,.22);
+  }
+  header.hide-nav{transform:translateY(-110%);}
+  .logo-mark{display:flex;align-items:center;gap:.6rem;}
+  .logo-mark img{width:34px;height:34px;flex-shrink:0;}
+  .logo-mark svg{width:34px;height:34px;flex-shrink:0;}
+  .logo-text{font-family:var(--serif);color:var(--dourado-claro);line-height:1.1;}
+  .logo-text .l1{font-size:1rem;letter-spacing:.1em;display:block;font-weight:600;}
+  .logo-text .l2{font-size:.48rem;letter-spacing:.2em;color:#a89674;text-transform:uppercase;font-family:var(--sans);font-weight:400;}
+  nav.links{display:flex;gap:1.6rem;}
+  nav.links a{
+    color:#e8ddd0;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+    position:relative;padding-bottom:5px;font-weight:400;
+  }
+  nav.links a::after{
+    content:'';position:absolute;bottom:0;left:0;width:0;height:1.5px;background:var(--dourado);
+    transition:width .35s ease;
+  }
+  nav.links a:hover::after,nav.links a.active::after{width:100%;}
+  nav.links a.active{color:var(--dourado-claro);}
+  .nav-cta{display:flex;align-items:center;gap:1.1rem;}
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:.4rem;}
+  .burger span{width:24px;height:1.5px;background:var(--dourado-claro);transition:all .3s ease;}
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;min-height:100svh;
+    display:flex;align-items:flex-start;
+    color:var(--branco);
+    overflow:hidden;
+    width:100%;
+    isolation:isolate;
+  }
+  @media(min-width:901px){
+    .hero{align-items:flex-end;}
+  }
+  .hero-bg{position:absolute;inset:0;z-index:-2;}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 20%;transform:scale(1.08);animation:heroZoom 18s ease-out forwards;display:block;}
+  @keyframes heroZoom{to{transform:scale(1);}}
+  .hero-bg::after{
+    content:'';position:absolute;inset:0;
+    background:
+      linear-gradient(180deg, rgba(253,251,249,.4) 0%, rgba(253,251,249,.72) 32%, rgba(253,251,249,.97) 88%),
+      linear-gradient(90deg, rgba(253,251,249,.94) 0%, rgba(253,251,249,.55) 48%, rgba(253,251,249,.2) 100%);
+  }
+  .hero-content{position:relative;z-index:2;width:100%;}
+  .hero .hero-content{padding-top:calc(var(--header-h) + 4.5rem);padding-bottom:3rem;}
+  .hero-inner{max-width:680px;}
+  .hero{color:var(--texto-escuro);}
+  .hero .eyebrow{color:var(--dourado);margin-bottom:1.5rem;display:flex;align-items:center;gap:.8rem;font-weight:600;}
+  .hero .eyebrow::before{content:'';width:34px;height:1px;background:var(--dourado);display:inline-block;}
+  .hero h1{
+    font-size:clamp(2.5rem,6vw,4.6rem);
+    margin-bottom:1.4rem;
+    line-height:1.08;
+    letter-spacing:-.6px;
+    color:var(--texto-escuro);
+  }
+  .hero .word{display:inline-block;overflow:hidden;}
+  .hero .word span{animation:wordReveal .9s cubic-bezier(.16,.99,.61,1) forwards;display:block;}
+  @keyframes wordReveal{
+    0%{opacity:0;transform:translate(0,-100%);}
+    100%{opacity:1;transform:translate(0,0);}
+  }
+  .hero p{font-size:1.1rem;color:var(--texto-escuro);opacity:.85;margin-bottom:2rem;line-height:1.6;max-width:560px;}
+  .hero .btn{margin-top:1rem;}
+  @media(max-width:900px){
+    .hero .hero-content{padding-top:calc(var(--header-h) + 2.5rem);padding-bottom:5rem;}
+  }
+
+  /* ===== SEÇÃO SOBRE ===== */
+  section#sobre{padding:7rem 4.5% 5rem;display:flex;align-items:center;}
+  @media(min-width:901px){
+    section#sobre{
+      min-height:100vh;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:6rem;
+      align-items:center;
+      padding:4rem 4.5%;
+    }
+  }
+  .sobre-img{order:2;}
+  .sobre-img img{border-radius:12px;display:block;}
+  .sobre-text{order:1;}
+  @media(max-width:900px){
+    .sobre-img{margin-bottom:3rem;}
+  }
+  .sobre-text h2{font-size:clamp(2rem,4vw,3.2rem);margin-bottom:1.5rem;color:var(--texto-escuro);}
+  .sobre-text .eyebrow{margin-bottom:1rem;}
+  .sobre-text p{line-height:1.7;color:#5a5551;font-size:.95rem;margin-bottom:1.2rem;}
+  .sobre-text ul{list-style:none;margin:2rem 0;}
+  .sobre-text li{padding-left:2rem;margin-bottom:.8rem;position:relative;line-height:1.6;color:#5a5551;}
+  .sobre-text li::before{content:'✓';position:absolute;left:0;color:var(--dourado);font-weight:600;}
+  .sobre-text .btn{margin-top:2rem;}
+
+  /* ===== ESPECIALIDADES ===== */
+  section#especializacoes{
+    padding:6rem 4.5%;
+    background:var(--rose-2);
+  }
+  .spec-header{text-align:center;margin-bottom:4rem;}
+  .spec-header h2{font-size:clamp(2rem,4vw,3.2rem);margin-bottom:1rem;}
+  .spec-header p{color:#5a5551;max-width:580px;margin:0 auto;line-height:1.6;}
+  .spec-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:2rem;
+  }
+  .spec-card{
+    background:var(--branco);
+    padding:2.5rem;
+    border-radius:12px;
+    border-top:3px solid var(--dourado);
+    transition:all .4s ease;
+  }
+  .spec-card:hover{transform:translateY(-8px);box-shadow:0 12px 32px rgba(0,0,0,.08);}
+  .spec-card h3{font-size:1.3rem;margin-bottom:1rem;color:var(--texto-escuro);}
+  .spec-card p{color:#5a5551;line-height:1.7;font-size:.9rem;}
+
+  /* ===== GALERIA/TRANSFORMAÇÕES ===== */
+  section#galeria{padding:6rem 4.5%;}
+  .gal-header{text-align:center;margin-bottom:3rem;}
+  .gal-header h2{font-size:clamp(2rem,4vw,3.2rem);margin-bottom:1rem;}
+  .gal-header p{color:#5a5551;max-width:580px;margin:0 auto;line-height:1.6;}
+  .gal-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:2rem;
+  }
+  .gal-item{
+    position:relative;
+    overflow:hidden;
+    aspect-ratio:1;
+    border-radius:8px;
+    cursor:pointer;
+    group:'gal-item';
+  }
+  .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+  .gal-item:hover img{transform:scale(1.08);}
+  .gal-item .overlay{
+    position:absolute;inset:0;
+    background:linear-gradient(135deg,rgba(201,161,90,.92),rgba(201,161,90,.75));
+    display:flex;align-items:center;justify-content:center;
+    opacity:0;transition:opacity .4s ease;
+  }
+  .gal-item:hover .overlay{opacity:1;}
+  .overlay-text{color:var(--branco);text-align:center;font-weight:600;font-size:1.1rem;}
+
+  /* ===== TESTIMONIALS ===== */
+  section#depoimentos{
+    padding:6rem 4.5%;
+    background:var(--preto);
+    color:var(--branco);
+  }
+  .test-header{text-align:center;margin-bottom:4rem;}
+  .test-header h2{font-size:clamp(2rem,4vw,3.2rem);color:var(--branco);margin-bottom:1rem;}
+  .test-header p{color:#b8a891;max-width:580px;margin:0 auto;}
+  .test-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:2rem;
+  }
+  .test-card{
+    background:rgba(201,161,90,.08);
+    padding:2.5rem;
+    border-radius:8px;
+    border-left:3px solid var(--dourado);
+  }
+  .test-card p{line-height:1.8;margin-bottom:1.5rem;color:#ddd;font-size:.9rem;}
+  .test-author{display:flex;align-items:center;gap:1rem;}
+  .test-author-img{width:48px;height:48px;border-radius:50%;background:var(--dourado);flex-shrink:0;}
+  .test-author-info h4{color:var(--branco);font-size:.9rem;margin-bottom:.2rem;}
+  .test-author-info span{color:#a89674;font-size:.8rem;}
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--preto);color:var(--branco);padding:4rem 4.5% 2rem;}
+  .foot-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:3rem;
+    margin-bottom:3rem;
+  }
+  .foot-logo{display:flex;align-items:center;gap:.8rem;margin-bottom:1rem;}
+  .foot-logo span{display:flex;align-items:center;}
+  .foot-logo .logo-text{font-size:.9rem;}
+  footer p.small{color:#a89674;font-size:.85rem;line-height:1.6;margin-top:1rem;}
+  footer h6{font-family:var(--serif);font-size:1rem;margin-bottom:1.5rem;color:var(--dourado);}
+  footer a{color:#ddd;display:block;margin-bottom:.8rem;font-size:.9rem;transition:color .3s ease;}
+  footer a:hover{color:var(--dourado-claro);}
+  .foot-social{display:flex;gap:1rem;margin-top:1.5rem;}
+  .foot-social a{width:36px;height:36px;display:flex;align-items:center;justify-content:center;border:1px solid #555;border-radius:50%;margin:0;margin-right:.5rem;}
+  .foot-social a:hover{border-color:var(--dourado);}
+  .foot-social svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.5;}
+  .foot-bottom{
+    padding-top:2rem;
+    border-top:1px solid rgba(201,161,90,.3);
+    display:flex;justify-content:space-between;align-items:center;
+    font-size:.8rem;
+    color:#a89674;
+  }
+  @media(max-width:600px){
+    .foot-bottom{flex-direction:column;gap:1rem;text-align:center;}
+  }
+
+  /* ===== MOBILE MENU ===== */
+  .mobile-menu{
+    position:fixed;top:0;left:0;right:0;bottom:0;
+    background:rgba(12,10,9,.98);
+    backdrop-filter:blur(10px);
+    z-index:99;
+    display:none;flex-direction:column;align-items:center;justify-content:center;
+    gap:2rem;
+    padding:2rem;
+  }
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{color:#ddd;font-size:1.3rem;letter-spacing:.1em;text-transform:uppercase;transition:color .3s ease;}
+  .mobile-menu a:hover{color:var(--dourado-claro);}
+  .menu-close{
+    position:absolute;top:1.5rem;right:1.5rem;
+    width:40px;height:40px;display:flex;align-items:center;justify-content:center;
+    cursor:pointer;color:#ddd;
+  }
+  .menu-close::before,.menu-close::after{
+    content:'';position:absolute;width:24px;height:1.5px;background:#ddd;
+  }
+  .menu-close::before{transform:rotate(45deg);}
+  .menu-close::after{transform:rotate(-45deg);}
+
+  /* ===== FLOATING BUTTONS ===== */
+  .wa-float{
+    position:fixed;bottom:2rem;right:2rem;
+    width:56px;height:56px;
+    background:var(--dourado);
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    color:var(--preto);
+    box-shadow:0 4px 16px rgba(201,161,90,.4);
+    transition:all .3s ease;
+    z-index:50;
+    text-decoration:none;
+  }
+  .wa-float:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(201,161,90,.6);}
+  .wa-float svg{width:28px;height:28px;fill:currentColor;}
+  .top-float{
+    position:fixed;bottom:2rem;right:calc(2rem + 70px);
+    width:48px;height:48px;
+    background:var(--dourado-claro);
+    border:none;border-radius:50%;
+    color:var(--preto);
+    cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+    opacity:0;pointer-events:none;
+    transition:all .3s ease;
+    z-index:50;
+  }
+  .top-float.show{opacity:1;pointer-events:auto;}
+  .top-float:hover{background:var(--dourado);}
+  .top-float svg{width:24px;height:24px;stroke:currentColor;}
+
+  /* ===== REVEAL ANIMATION ===== */
+  .reveal{
+    opacity:0;
+    transform:translate(0,40px);
+    transition:opacity .6s ease,transform .6s ease;
+  }
+  .reveal.show{
+    opacity:1;
+    transform:translate(0,0);
+  }
+
+  @media(max-width:900px){
+    nav.links{display:none;}
+    .burger{display:flex;}
+  }
+</style>
+</head>
+<body>
+
+<div id="tooth-svg" style="display:none;">
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path fill="currentColor" d="M30 15c-10 0-15 10-14 23 1 17 6 37 12 47 3 5 8 3 9-5 1-10 3-20 13-20s12 10 13 20c1 8 6 10 9 5 6-10 11-30 12-47 1-13-4-23-14-23-8 0-12 5-20 5s-8-5-20-5Z"/>
+</svg>
+</div>
+
+<header id="header">
+  <div class="logo-mark">
+    <img loading="lazy" src="logo_kennedy.webp" alt="Dr. Kennedy Andrade Logo" class="logo-img">
+    <div class="logo-text">
+      <span class="l1">KENNEDY</span>
+      <span class="l2">Protocolo K</span>
+    </div>
+  </div>
+  <nav class="links">
+    <a href="#sobre" data-nav>Sobre</a>
+    <a href="#especializacoes" data-nav>Especialidades</a>
+    <a href="#galeria" data-nav>Casos</a>
+    <a href="#depoimentos" data-nav>Depoimentos</a>
+  </nav>
+  <div class="nav-cta">
+    <button id="burger" class="burger" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<div id="mobileMenu" class="mobile-menu">
+  <span id="closeMenu" class="menu-close"></span>
+  <a href="#sobre" class="mob-link">Sobre</a>
+  <a href="#especializacoes" class="mob-link">Especialidades</a>
+  <a href="#galeria" class="mob-link">Casos</a>
+  <a href="#depoimentos" class="mob-link">Depoimentos</a>
+  <a href="https://wa.me/554599015555" target="_blank" class="btn solid">Agendar</a>
+</div>
+
+<section class="hero">
+  <div class="hero-bg">
+    <img loading="lazy" src="kenedy_dentista_1.webp" alt="Dr. Kennedy Andrade">
+  </div>
+  <div class="container hero-content">
+    <div class="hero-inner">
+      <div class="eyebrow">Transformação estética digital</div>
+      <h1 id="heroTitle">Protocolo K: Sua Transformação Começa Aqui</h1>
+      <p>Especialista em lentes de contato dental e odontologia digital. Transformações realistas que respeitam a harmonia natural do seu sorriso.</p>
+      <a href="https://wa.me/554599015555" target="_blank" rel="noopener" class="btn solid">Agendar Consulta</a>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;width:100%;">
+    <div class="sobre-text reveal">
+      <div class="eyebrow">Sobre o Especialista</div>
+      <h2>Dr. Kennedy Andrade da Silva</h2>
+      <p><strong>CRM-PR 37638 | RQE 30566</strong></p>
+      <p>Com mais de uma década de experiência em odontologia estética digital, sou o criador do Protocolo K, uma metodologia revolucionária focada em lentes de contato dental que transformam sorrisos de forma realista e preservam a beleza natural de cada paciente.</p>
+      <ul>
+        <li>Lentes de contato dental de alta precisão</li>
+        <li>Odontologia digital 3D</li>
+        <li>Estética médica avançada</li>
+        <li>Implantodontia e reabilitação oral</li>
+        <li>Análise digital de harmonia facial</li>
+      </ul>
+      <p style="margin-top:1.5rem;font-size:.9rem;color:var(--texto-suave);">Fundador e CEO da <strong>DuoClinic Medicina & Odontologia</strong> — Centro de excelência em estética facial e odontológica em Foz do Iguaçu.</p>
+      <a href="https://wa.me/554599015555" target="_blank" rel="noopener" class="btn solid">Conhecer Mais</a>
+    </div>
+    <div class="sobre-img reveal">
+      <img loading="lazy" src="kenedy_dentista_3.webp" alt="Dr. Kennedy Andrade profissional">
+    </div>
+  </div>
+</section>
+
+<section id="especializacoes">
+  <div class="container">
+    <div class="spec-header">
+      <div class="eyebrow">Serviços Especializados</div>
+      <h2>Protocolos de Excelência</h2>
+      <p>Cada tratamento é personalizado e desenvolvido com tecnologia de ponta para garantir resultados que excedem expectativas.</p>
+    </div>
+    <div class="spec-grid">
+      <div class="spec-card reveal">
+        <h3>Protocolo K</h3>
+        <p>Transformação estética exclusiva com lentes de contato dental. Metodologia própria que restaura a harmonia do sorriso em poucas sessões.</p>
+      </div>
+      <div class="spec-card reveal">
+        <h3>Odontologia Digital</h3>
+        <p>Planejamento em 3D, impressão digital e confecção digital de peças protéticas. Precisão que aumenta o sucesso estético e funcional.</p>
+      </div>
+      <div class="spec-card reveal">
+        <h3>Estética Médica</h3>
+        <p>Integração de procedimentos estéticos faciais para harmonia completa. Harmonização orofacial que complementa o novo sorriso.</p>
+      </div>
+      <div class="spec-card reveal">
+        <h3>Implantodontia Premium</h3>
+        <p>Reabilitação oral completa com implantes. Planejamento digital e técnicas avançadas garantem funcionalidade e naturalidade.</p>
+      </div>
+      <div class="spec-card reveal">
+        <h3>Transformações Completas</h3>
+        <p>Projetos integrados que combinam lentes, implantes e estética. Renovação total do sorriso e da autoconfiança.</p>
+      </div>
+      <div class="spec-card reveal">
+        <h3>Análise Digital</h3>
+        <p>Tecnologia avançada para mapeamento facial completo. Diagnóstico preciso que orienta cada decisão estética.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="container">
+    <div class="gal-header">
+      <div class="eyebrow">Galeria de Casos</div>
+      <h2>Transformações Realizadas</h2>
+      <p>Veja os resultados reais do Protocolo K em casos clínicos que restauraram confiança e harmonia estética.</p>
+    </div>
+    <div class="gal-grid">
+      <div class="gal-item reveal">
+        <img loading="lazy" src="IMG_3099.JPG" alt="Caso clínico 1">
+        <div class="overlay">
+          <span class="overlay-text">Lentes de Contato</span>
+        </div>
+      </div>
+      <div class="gal-item reveal">
+        <img loading="lazy" src="IMG_3100.JPG" alt="Caso clínico 2">
+        <div class="overlay">
+          <span class="overlay-text">Transformação</span>
+        </div>
+      </div>
+      <div class="gal-item reveal">
+        <img loading="lazy" src="IMG_3101.JPG" alt="Caso clínico 3">
+        <div class="overlay">
+          <span class="overlay-text">Resultado Final</span>
+        </div>
+      </div>
+      <div class="gal-item reveal">
+        <img loading="lazy" src="IMG_3102.JPG" alt="Caso clínico 4">
+        <div class="overlay">
+          <span class="overlay-text">Protocolo K</span>
+        </div>
+      </div>
+      <div class="gal-item reveal">
+        <img loading="lazy" src="IMG_3103.JPG" alt="Caso clínico 5">
+        <div class="overlay">
+          <span class="overlay-text">Estética Premium</span>
+        </div>
+      </div>
+      <div class="gal-item reveal">
+        <img loading="lazy" src="IMG_3098.JPG" alt="Caso clínico 6">
+        <div class="overlay">
+          <span class="overlay-text">Harmonia Facial</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos">
+  <div class="container">
+    <div class="test-header">
+      <div class="eyebrow">O Que Dizem</div>
+      <h2>Histórias de Transformação</h2>
+      <p>Pacientes satisfeitos que encontraram confiança e beleza através do Protocolo K.</p>
+    </div>
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <p>"Dr. Kennedy transformou meu sorriso de forma incrível. As lentes ficaram tão naturais que ninguém percebe que não são dentes naturais. Recuperei minha confiança!"</p>
+        <div class="test-author">
+          <div class="test-author-img"></div>
+          <div class="test-author-info">
+            <h4>Ana Silva</h4>
+            <span>Paciente</span>
+          </div>
+        </div>
+      </div>
+      <div class="test-card reveal">
+        <p>"A tecnologia digital permitiu que eu visse meu novo sorriso antes do tratamento. Perfeito! Dr. Kennedy é um artista. Recomendo muito!"</p>
+        <div class="test-author">
+          <div class="test-author-img"></div>
+          <div class="test-author-info">
+            <h4>Carlos Mendes</h4>
+            <span>Paciente</span>
+          </div>
+        </div>
+      </div>
+      <div class="test-card reveal">
+        <p>"Não esperava que fosse tão rápido e indolor. O resultado superou expectativas. O Protocolo K realmente funciona!"</p>
+        <div class="test-author">
+          <div class="test-author-img"></div>
+          <div class="test-author-info">
+            <h4>Mariana Costa</h4>
+            <span>Paciente</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <img loading="lazy" src="logo_kennedy.webp" alt="Dr. Kennedy Andrade Logo" style="width:40px;height:40px;">
+          <span class="logo-text"><span class="l1">KENNEDY</span></span>
+        </div>
+        <p class="small">Protocolo K: transformações estéticas digitais com tecnologia de ponta e cuidado humanizado. Especialista em lentes de contato dental e odontologia premium.</p>
+      </div>
+      <div class="foot-col">
+        <h6>Navegação</h6>
+        <a href="#sobre">Sobre</a>
+        <a href="#especializacoes">Especialidades</a>
+        <a href="#galeria">Casos</a>
+        <a href="#depoimentos">Depoimentos</a>
+      </div>
+      <div class="foot-col">
+        <h6>Especialidades</h6>
+        <a href="#especializacoes">Protocolo K</a>
+        <a href="#especializacoes">Odontologia Digital</a>
+        <a href="#especializacoes">Implantodontia</a>
+        <a href="#especializacoes">Estética Médica</a>
+      </div>
+      <div class="foot-col">
+        <h6>Contato</h6>
+        <p>Av. José Maria de Brito, 1567<br>Bairro Monjolo<br>Foz do Iguaçu, PR</p>
+        <a href="tel:+554599015555">+55 45 99015-5555</a>
+        <a href="https://wa.me/554599015555">WhatsApp</a>
+        <div class="foot-social">
+          <a href="https://wa.me/554599015555" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Dr. Kennedy Andrade — Protocolo K. Direitos reservados.</span>
+      <span>CRM-PR 37638 | RQE 30566</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/554599015555" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.14L2 22l5.13-1.54a9.85 9.85 0 004.91 1.31h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 17.9h-.01a8.02 8.02 0 01-4.08-1.12l-.29-.17-3.05.92.91-2.98-.19-.3a8 8 0 01-1.24-4.34c0-4.42 3.6-8.02 8.03-8.02 2.14 0 4.16.84 5.67 2.35a7.96 7.96 0 012.34 5.68c0 4.43-3.6 8-8.09 8zm4.4-6c-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.8-.2-.48-.4-.42-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.71 2.61 4.15 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+</a>
+
+<button class="top-float" id="topFloat" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+  const header = document.getElementById('header');
+  let lastY = window.scrollY;
+  window.addEventListener('scroll', ()=>{
+    const y = window.scrollY;
+    if(y > 60){ header.classList.add('scrolled'); } else { header.classList.remove('scrolled'); }
+    if(y > lastY && y > 240){ header.classList.add('hide-nav'); }
+    else{ header.classList.remove('hide-nav'); }
+    lastY = y;
+
+    const topFloat = document.getElementById('topFloat');
+    if(y > 600){ topFloat.classList.add('show'); } else { topFloat.classList.remove('show'); }
+  }, {passive:true});
+
+  document.getElementById('topFloat').addEventListener('click', ()=>{
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // Logo image is now directly embedded as PNG
+
+  const burger = document.getElementById('burger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeMenu = document.getElementById('closeMenu');
+  burger.addEventListener('click', ()=> mobileMenu.classList.add('open'));
+  closeMenu.addEventListener('click', ()=> mobileMenu.classList.remove('open'));
+  document.querySelectorAll('.mob-link').forEach(l=> l.addEventListener('click', ()=> mobileMenu.classList.remove('open')));
+
+  const revealEls = document.querySelectorAll('.reveal');
+  revealEls.forEach((el,i)=>{ el.style.transitionDelay = (i % 6) * 70 + 'ms'; });
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.15});
+  revealEls.forEach(el=> io.observe(el));
+
+  const heroTitle = document.getElementById('heroTitle');
+  (function splitWords(){
+    const walker = document.createTreeWalker(heroTitle, NodeFilter.SHOW_TEXT, null);
+    const textNodes = [];
+    let n;
+    while(n = walker.nextNode()){ textNodes.push(n); }
+    let wordIndex = 0;
+    textNodes.forEach(node=>{
+      const words = node.textContent.split(' ');
+      const frag = document.createDocumentFragment();
+      words.forEach((w,i)=>{
+        if(w === ''){ return; }
+        const wrap = document.createElement('span');
+        wrap.className = 'word';
+        const inner = document.createElement('span');
+        inner.textContent = w + (i < words.length-1 ? '\u00A0' : '');
+        inner.style.animationDelay = (0.15 + wordIndex*0.09) + 's';
+        wrap.appendChild(inner);
+        frag.appendChild(wrap);
+        wordIndex++;
+      });
+      node.parentNode.replaceChild(frag, node);
+    });
+  })();
+
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('nav.links a[data-nav]');
+  const navIo = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      const link = document.querySelector('nav.links a[href="#'+entry.target.id+'"]');
+      if(!link) return;
+      if(entry.isIntersecting){
+        navLinks.forEach(l=>l.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  }, {rootMargin:'-45% 0px -50% 0px'});
+  sections.forEach(s=> navIo.observe(s));
+</script>
+</body>
+</html>
